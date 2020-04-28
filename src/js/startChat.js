@@ -5,7 +5,7 @@ import createUserName from './createUserName.js';
 export default function startChat(currentUser, widgetHtml) {
   const [currentUsersContainer, chatContainer, sendMessageForm, messageInput] = widgetHtml.elements;
 
-  const ws = new WebSocket('ws://localhost:7070/ws');
+  const ws = new WebSocket('ws://ahj-homework-8-2.herokuapp.com/ws');
   ws.binaryType = 'blob';
 
   ws.addEventListener('open', () => {

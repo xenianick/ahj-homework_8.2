@@ -2,7 +2,7 @@
 import createMessageCard from './createMessageCard.js';
 
 export default async function getChatHistory(chatContainer) {
-  const response = await fetch('http://localhost:7070');
+  const response = await fetch('https://ahj-homework-8-2.herokuapp.com');
   if (response.ok) {
     const chatArchive = await response.json();
     chatArchive.forEach((item) => {
